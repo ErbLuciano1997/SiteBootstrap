@@ -177,9 +177,9 @@ a:hover {
 .btn-solid-lg {
 	display: inline-block;
 	padding: 1.625rem 2.625rem 1.625rem 2.625rem;
-	border: 1px solid #7dc22b;
+	border: 1px solid red;
 	border-radius: 4px;
-	background-color: #7dc22b;
+	background-color: yellow;
 	color: #ffffff;
 	font-weight: 600;
 	font-size: 0.875rem;
@@ -190,7 +190,7 @@ a:hover {
 
 .btn-solid-lg:hover {
 	background-color: transparent;
-	color: #7dc22b; /* needs to stay here because of the color property of a tag */
+	color: blue; /* needs to stay here because of the color property of a tag */
 	text-decoration: none;
 }
 
@@ -314,6 +314,7 @@ a:hover {
 /**********************/
 /*     Navigation     */
 /**********************/
+
 .navbar {
 	background-color: #161223;
 	font-weight: 600;
@@ -434,7 +435,7 @@ a:hover {
 }
 
 .navbar .fa-stack-2x {
-	color: #7dc22b;
+	color: white;
 	transition: all 0.2s ease;
 }
 
@@ -444,7 +445,7 @@ a:hover {
 }
 
 .navbar .fa-stack:hover .fa-stack-2x {
-	color: #ffffff;
+	color: #7dc22b;
 }
 
 .navbar .fa-stack:hover .fa-stack-1x {
@@ -532,6 +533,12 @@ a:hover {
 }
 
 .cards-1 .card-icon .fas {
+	color: #ffffff;
+	font-size: 2.125rem;
+	line-height: 90px;
+}
+
+.cards-1 .card-icon .fab {
 	color: #ffffff;
 	font-size: 2.125rem;
 	line-height: 90px;
@@ -995,6 +1002,20 @@ a:hover {
 /*************************/
 /*     Media Queries     */
 /*************************/	
+
+@media screen and (max-width:1005px){
+	.navbar{
+		/* display: none; */
+		background-color: auto;
+		margin-top: -50px;
+		height: 0;
+		width: auto;
+		margin-bottom: 90px;
+		position: absolute;
+
+	}
+}
+
 /* Min-width 768px */
 @media (min-width: 768px) {
 
